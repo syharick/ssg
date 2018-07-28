@@ -1,0 +1,112 @@
+/* Информация об игре */
+#about_game{ width: 1004px; }
+	#about_game img#preview{ 
+		display: inline-block;
+		padding: 20px; 
+		width: 150px;
+	}
+	#about_game #description{
+		display: inline-block;
+		font-size: 14px;
+
+	}
+		#about_game #description h1 a{
+			font-size: 18px;
+			font-weight: 600;
+		}
+		#about_game #description a{ font-size: 14px; }
+		#about_game #description span{
+			font-size: 14px;
+			font-weight: 600;
+		}
+		a#subscript{
+			background-color: #ffd600;
+			font-weight: 600;
+			padding: 5px 7px;
+		}
+		a#subscript:hover{ color: #232323 !important; }
+		#more{
+			font-weight: 300;
+			border-bottom: 2px dotted #444444;
+		}
+		
+	#rating{
+		display: inline-block;
+		position: relative;
+		top: -10px;
+		left: 330px;
+	}
+		#rating span{
+			font-size: 12px;
+			margin-left: 25px;
+		}
+		#rating span:last-child{ margin-left: 0; }
+		#site, #users{
+			margin: 0 auto;
+			width: 10px;
+			border: 2px solid #ff0d00;
+			padding: 20px 25px;
+			border-radius: 40px;
+			color: #444444;
+			font-size: 18px;
+		}
+		#users{ border-color: #0c5da5; }
+/* ---Информация об игре */
+
+	
+/* Хлебные крошки */
+#bread_crumbs{
+	background-color: #999999;
+	font-size: 14px;
+    margin-top: 20px;
+	padding: 5px 0 5px 20px;
+	color: #fff;
+}
+	#bread_crumbs a{
+		font-size: 14px;
+		color: #fff;
+	}
+/* ---Хлебные крошки */
+
+
+/* Содержание новости */
+#news{ width: 690px; }
+	#news h1{
+		font-size: 18px;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	#news p{ font-size: 14px; }
+	#news span, #news a{ font-size: 12px; }
+	#news img{
+		width: 690px;
+		padding: 10px 0;
+	}
+	#news .details{
+		font-size: 12px;
+		color: #444444;
+	}
+	#news .social_icons{
+		vertical-align: middle;
+		width: 20px;
+	}
+/* ---Содержание новости */
+
+
+/* Похожие новости */
+#similar{ width: 690px; }
+	#similar h2{
+		margin-top: 30px;
+		color: #fff;
+		font-size: 14px;
+	}
+	.similar{
+		width: 205px;
+		display: inline-block;
+		padding: 0;
+		margin: 10px 0 0 20px;
+	}
+/* ---Похожие новости */
+
+	
+div #right_div{ margin-left: 480px; }

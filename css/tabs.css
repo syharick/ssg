@@ -1,0 +1,38 @@
+/* Переключение вкладок центрального div */
+.tabs{
+	display: inline-block;
+}
+.tabs > div{
+	padding-top: 10px;
+}
+.tabs ul{
+	margin: 0;
+	padding: 0;
+}
+/* .tabs ul:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 5px;
+	background: #ff0d00;
+} */
+.tabs ul li{
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin-bottom: 20px;
+	background-color: #ff0d00;
+	*padding: 10px 15px;
+	*color: #707070;
+}
+.tabs ul li:hover{ background-color: #043A6B !important; }
+.tabs ul li.active, .tabs ul li.active:hover{
+	background-color: #ff0d00 !important;
+	*color: #fff;
+}
+/* .tabs ul li:hover{
+	background-color: #ff0d00;
+} */
+/* ---Переключение вкладок центрального div */

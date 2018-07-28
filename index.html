@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная страница</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/lightslider.css">
+	<link rel="stylesheet" href="css/tabs.css">
+	<!--[if lt IE 9]>
+		<script>
+			var e = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + 	"progress,section,time,video").split(',');
+			for (var i = 0; i < e.length; i++) 
+			{
+				document.createElement(e[i]);
+			}
+		</script>
+	<![endif]-->
+	<script defer src="js/jquery.min.js"></script>
+	<script defer src="js/tabs.js"></script>
+	<script defer src='js/lightslider.js'></script>
+	<script defer src="js/call_lightslider.js"></script>
+	<script defer src="js/main_menu.js"></script>
+	<script defer src="js/mini_gallery.js"></script>
+</head>
+<body>
+<!-- Шапка -->
+<div id="header">
+	<div class="w1004">
+		<a href="#"><img id="logo" src="images/service/logo.png"></a>
+		<h1>
+			<a href="#">SpaceShipGames</a>
+			<span>Новости игровой индустрии</span>
+		</h1>
+		<form action="#" method="POST" id="entry">
+			<fieldset>
+				<input type="text" name="login" placeholder="Логин"><br>
+				<a href="#">Зарегистрироваться</a>
+			</fieldset>
+			<fieldset>
+				<input type="password" name="password" placeholder="Пароль"><br>
+				<a href="#">Забыли пароль?</a>
+			</fieldset>
+			<input type="submit" name="entry" value="Войти">
+		</form>
+	</div>
+</div>
+<!-- ---Шапка -->
+<!-- Горизонтальное меню -->
+<div id="nav">
+	<div class="w1004">
+		<nav>
+			<ul id="menu">
+				<li class="have_sub_menu">Новости
+					<ul class="sub_menu">
+						<li>PC-игры</li>
+						<li>Консольные игры</li>
+						<li>Индустрия</li>
+						<li>Железо</li>
+						<li>Кино</li>
+						<li>Разное</li>
+					</ul>
+				</li>
+				<li class="have_sub_menu">Статьи
+					<ul class="sub_menu">
+						<li>Превью</li>
+						<li>Рецензии</li>
+						<li>Дайджесты</li>
+						<li>Разное</li>
+					</ul>
+				</li>
+				<li class="have_sub_menu">Игры
+					<ul class="sub_menu">
+						<li>Адвенчуры</li>
+						<li>Аркады</li>
+						<li>Логические</li>
+						<li>Ролевые</li>
+						<li>Симуляторы</li>
+						<li>Стратегии</li>
+						<li>Экшены</li>
+						<li>Ближайшие релизы</li>
+						<li>Выбор сайта</li>
+						<li>Выбор пользователей</li>
+					</ul>
+				</li>
+				<li class="have_sub_menu">Видео
+					<ul class="sub_menu">
+						<li>Трейлеры</li>
+						<li>Геймплей</li>
+						<li>Разное</li>
+					</ul>
+				</li>
+				<li class="have_sub_menu">Картинки
+					<ul class="sub_menu">
+						<li>Игровые</li>
+						<li>Кино</li>
+						<li>Разное</li>
+					</ul>
+				</li>
+				<li>Блоги</li>
+				<li>Форум</li>
+				<li class="have_sub_menu">Играть
+					<ul class="sub_menu">
+						<li class="have_sub_menu sub">Мини-игры
+							<ul class="sub_menu">
+								<li>Аркадные</li>
+								<li>Логические</li>
+								<li>Симуляторы</li>
+								<li>Стрелялки</li>
+								<li>Настольные</li>
+								<li>Детские</li>
+								<li>Скрытые объекты</li>
+								<li>Шарики</li>
+								<li>Арканоид</li>
+								<li>Игры Alawar</li>
+							</ul>
+						</li>
+						<li class="have_sub_menu sub">Онлайн-игры
+							<ul class="sub_menu">
+								<li>Для мальчиков</li>
+								<li>Для девочек</li>
+								<li>RPG&nbsp;&nbsp;</li>
+								<li>Шутеры</li>
+								<li>Стратегии</li>
+								<li>Спортивные</li>
+								<li>Клиентские</li>
+								<li>Браузерные</li>
+								<li>Фэнтези</li>
+								<li>Фантастика</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<form action="#" method="GET">
+			<input type="image" name="search_image" src="images/service/search.png">
+			<input type="search" name="search" placeholder="Поиск...">
+		</form>
+	</div>
+</div>
+<!-- ---Горизонтальное меню -->
+<!-- Основной контент -->
+<div id="wrap">
+	<!-- Слайдер -->
+	<div id="gallery">
+		<ul id="lightSlider">
+			<li data-thumb="images/slider/thumbnails/g1.jpg">
+				<img src="images/slider/fullsize/g1.jpg">
+				<p>Game 1</p>
+			</li>
+			<li data-thumb="images/slider/thumbnails/g2.jpg">
+				<img src="images/slider/fullsize/g2.jpg">
+				<p>Game 2</p>
+			</li>
+			<li data-thumb="images/slider/thumbnails/g3.jpg">
+				<img src="images/slider/fullsize/g3.jpg">
+				<p>Game 3</p>
+			</li>
+			<li data-thumb="images/slider/thumbnails/g4.jpg">
+				<img src="images/slider/fullsize/g4.jpg">
+				<p>Game 4</p>
+			</li>
+			<li data-thumb="images/slider/thumbnails/g5.jpg">
+				<img src="images/slider/fullsize/g5.jpg">
+				<p>Game 5</p>
+			</li>
+			<li data-thumb="images/slider/thumbnails/g6.jpg">
+				<img src="images/slider/fullsize/g6.jpg">
+				<p>Game 6</p>
+			</li>
+		</ul>
+		<ul id="sign">
+			<li><p>Game 1</p></li>
+			<li><p>Game 2</p></li>
+			<li><p>Game 3</p></li>
+			<li><p>Game 4</p></li>
+			<li><p>Game 5</p></li>
+			<li><p>Game 6</p></li>
+		</ul>	
+	</div>
+	<!-- ---Слайдер -->
+	<div id="left_div">
+		<!-- Статьи -->
+		<h2>Статьи</h2>
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante.</p>
+				<time>11 июня 2016</time>
+				<span><a href="#"><img class="comments" src="images/service/comments.png" alt="comments">
+				11</a></span>
+			</div>
+		
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante.</p>
+				<time>11 июня 2016</time>
+				<span><a href="#"><img class="comments" src="images/service/comments.png" alt="comments">
+				11</a></span>
+			</div>
+		
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante.</p>
+				<time>11 июня 2016</time>
+				<span><a href="#"><img class="comments" src="images/service/comments.png" alt="comments">
+				11</a></span>
+			</div>
+			<a href="#" class="to_all_article">Все статьи</a>
+		<!-- ---Статьи -->	
+		<!-- Блоги -->
+		<h2>Блоги</h2>
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante.</p>
+				<time>11 июня 2016</time>
+				<span><a href="#">Автор</a></span>
+			</div>
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante.</p>
+				<time>11 июня 2016</time>
+				<span><a href="#">Автор</a></span>
+			</div>
+			<div class="article">
+				<h3><a href="/">Заголовок</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante.</p>
+				<time>11 июня 2016</time>
+				<span><a href="#">Автор</a></span>
+			</div>
+			<a href="#" class="to_all_article">К блогам</a>
+		<!-- ---Блоги -->
+		
+		<a href="#" class="empty_img"><img src="images/service/empty.jpg"  alt="advert"></a>
+	</div>
+	<div id="center_div">
+	<div class="tabs">
+		<!-- Новости, игры, видео -->
+		<ul>
+			<li>Новости</li>
+			<li>Игры</li>
+			<li>Видео</li>
+		</ul>
+		<div>
+			<div>
+			<div class="article">
+				<h3><a href="page_news.html">Заголовок</a></h3>
+				<a href="page_news.html"><img src="images/article/g1.jpg" class="preview" alt="/"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus.</p>
+				<time>11 июня 2016</time>
+				<span class="center_comments"><a href="#"><img class="comments" src="images/service/comments.png" alt="comments">
+				11</a></span>
+			</div>
+			
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<a href="#"><img src="images/article/g2.jpg" class="preview" alt="/"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus.</p>
+				<time>11 июня 2016</time>
+				<span class="center_comments"><a href="#"><img class="comments" src="images/service/comments.png" alt="comments">
+				11</a></span>
+			</div>
+			
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<a href="#"><img src="images/article/g3.jpg" class="preview" alt="/"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus.</p>
+				<time>11 июня 2016</time>
+				<span class="center_comments"><a href="#"><img class="comments" src="images/service/comments.png" alt="comments">
+				11</a></span>
+			</div>
+			
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<a href="#"><img src="images/article/g4.jpg" class="preview" alt="/"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus.</p>
+				<time>11 июня 2016</time>
+				<span class="center_comments"><a href="#"><img class="comments" src="images/service/comments.png" alt="comments">
+				11</a></span>
+			</div>
+			
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<a href="#"><img src="images/article/g5.jpg" class="preview" alt="/"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus.</p>
+				<time>11 июня 2016</time>
+				<span class="center_comments"><a href="#"><img class="comments" src="images/service/comments.png" alt="comments">
+				11</a></span>
+			</div>
+			
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<a href="#"><img src="images/article/g6.jpg" class="preview" alt="/"></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus.</p>
+				<time>11 июня 2016</time>
+				<span class="center_comments"><a href="#"><img class="comments" src="images/service/comments.png" alt="comments">
+				11</a></span>
+			</div>
+		
+			<a href="#" class="to_all_article more_news">Больше новостей</a>
+			</div>
+			
+			<div><div class="article">Игры</div></div>
+			<div><div class="article">Видео</div></div>
+		</div>
+	</div> 
+		<!-- ---Новости, игры, видео -->
+	</div>
+	
+	<div id="right_div">
+		<!-- DIV с картинками: 196х222 -->
+		<h2>Картинки</h2>
+		<div id="art">
+			<img src="images/service/arrow_left.png" alt="arrow-left" class="arrows left small ls">
+			<ul>
+				<li><a href="#"><img src="images/art/g1.jpg" alt="/"></a></li>
+				<li><a href="#"><img src="images/art/g2.jpg" alt="/"></a></li>
+				<li><a href="#"><img src="images/art/g3.jpg" alt="/"></a></li>
+				<li><a href="#"><img src="images/art/g4.jpg" alt="/"></a></li>
+				<li><a href="#"><img src="images/art/g5.jpg" alt="/"></a></li>
+				<li><a href="#"><img src="images/art/g6.jpg" alt="/"></a></li>
+			</ul>
+			<img src="images/service/arrow_right.png" alt="arrow-right" class="arrows right small rs">
+		</div>
+		<div id="art_name"><a href="#">Название альбома</a></div>
+		<!-- ---DIV с картинками: 196х222 -->
+		
+		<!-- Форум -->
+		<h2>Форум</h2>
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante.</p>
+				<time>11 июня 2016</time>
+				<span><a href="#">Автор</a></span>
+			</div>
+			
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante.</p>
+				<time>11 июня 2016</time>
+				<span><a href="#">Автор</a></span>
+			</div>
+			
+			<div class="article">
+				<h3><a href="#">Заголовок</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus vitae nunc rhoncus luctus. Etiam at finibus odio. Aenean nisl massa, auctor ac semper in, euismod ut ante.</p>
+				<time>11 июня 2016</time>
+				<span><a href="#">Автор</a></span>
+			</div>
+			<a href="#" class="to_all_article">На форум</a>
+		<!-- ---Форум -->
+		
+		<a href="#" class="empty_img"><img src="images/service/empty.jpg"  alt="advert"></a>
+	</div>
+	
+	<div id="push"></div>
+</div>
+<!-- ---Основной контент -->
+
+<!-- Футер -->
+<div id="footer">
+	<div class="w1004">
+		<div id="footer_left_div">
+			<span>Copyright &copy; 2016</span><br>
+			Все права защищены. Использование материалов сайта возможно только с прямой ссылкой на источник.
+		</div>
+		
+		<div id="footer_center_div">
+			<span>О нас</span>
+			<ul>
+				<li><a href="#">О сайте</a></li>
+				<li><a href="#">Реклама на сайте</a></li>
+				<li><a href="#" id="rss">RSS-канал</a></li>
+				<li><a href="#">Правила сайта</a></li>
+			</ul>
+		</div>
+		
+		<div id="footer_right_div">
+			<span>Мы в соцсетях</span><br>
+			<a href="#"><img src="images/social/vk.png" class="social_icons" alt="vk"></a>
+			<a href="#"><img src="images/social/twitter.png" class="social_icons" alt="twitter"></a>
+			<a href="#"><img src="images/social/facebook.png" class="social_icons" alt="facebook"></a>
+			<a href="#"><img src="images/social/google.png" class="social_icons" alt="google_plus"></a>
+			<a href="#"><img src="images/social/mail.png" class="social_icons" alt="mail_ru"></a>
+			<input type="button" name="feedback" value="Обратная связь">
+		</div>
+	</div>
+</div>
+<!-- ---Футер -->
+</body>
+</html>
